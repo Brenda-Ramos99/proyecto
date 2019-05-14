@@ -3,5 +3,5 @@
 define("SERVER","localhost");
 define("USER","root");
 define("PASSWORD","");
-define("VOTACIONES","proyecto");
+define("BASE","votaciones");
 define("CHAR","utf-8");
