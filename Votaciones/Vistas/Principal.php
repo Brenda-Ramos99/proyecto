@@ -10,9 +10,9 @@
             <h1>SelectSalv</h1>
             <div id="madeby">
                 <span>
-                    <a href="../ProyectoVotaciones/Buscar.php" >Consultar centro de votacion</a> &nbsp &nbsp &nbsp &nbsp &nbsp
-                    <a href="../ProyectoVotaciones/">Ver Resultados</a> &nbsp &nbsp &nbsp &nbsp &nbsp 
-                    <a href="../ProyectoVotaciones/Login.php">Ingresar</a> &nbsp &nbsp &nbsp
+                    <a href="../Vistas/Buscar.php" >Consultar centro de votacion</a> &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <a href="../Vistas/">Ver Resultados</a> &nbsp &nbsp &nbsp &nbsp &nbsp 
+                    <a href="../Vistas/Login.php">Ingresar</a> &nbsp &nbsp &nbsp
                 </span>
             </div>  
         </div>

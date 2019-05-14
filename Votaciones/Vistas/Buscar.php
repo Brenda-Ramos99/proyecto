@@ -10,16 +10,16 @@
     <body>
         <div class="cover">
             <h1>Ingrese el número de su DUI</h1>
-            <form  class="flex-form">
+            <form method="POST"action="../Modelo/DaoCiudadano.php" class="flex-form">
                 <label for="from">  
                     <span class="ion-android-search"></span>
                 </label>
-                <input type="search"pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9]"placeholder="00000000-0">
-                <input type="submit" value="Buscar">
+                <input name="palabra"type="search"pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]-[0-9]"placeholder="00000000-0" autofocus>
+                <input type="submit" name="buscar" value="Buscar">
             </form>
             <div id="madeby">
               <span>
-                  <a href="../ProyectoVotaciones/Principal.php"><h3>Volver al Inicio</h3></a>
+                  <a href="../Vistas/Principal.php"><h3>Volver al Inicio</h3></a>
               </span>
             </div> 
         </div>

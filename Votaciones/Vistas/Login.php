@@ -40,7 +40,7 @@
 
                     </form>
                     <span><br><br>
-                        <a href="../votaciones/principal.html"><center>Regresar a principal</center></a>	
+                        <a href="../Vistas/Principal.php"><center>Regresar a principal</center></a>	
                     </span>
                 </div>
             </div>

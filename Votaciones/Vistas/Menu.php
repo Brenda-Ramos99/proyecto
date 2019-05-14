@@ -39,11 +39,11 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="images/logo1.png" width="100" height="100" alt="logo"/></a>
+				        <img src="images/logo1.png" width="100" height="100" alt="logo"/>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">ACTA</a></li>
+                                            <li><a href="../Vistas/Acta.php">ACTA</a></li>
 				          <li><a href="about.html">GRAFICOS</a></li>
 				          <li><a href="packages.html">REPORTES</a></li>
 				          <li><a href="hotels.html">USUARIOS</a></li>

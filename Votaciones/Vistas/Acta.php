@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <h1 class="title"><center>Acta De Escrutinio</center></h1>
                             <!---inicio del formulario-->
-                            <form method="POST">
+                            <form method="POST" action="#">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group">
