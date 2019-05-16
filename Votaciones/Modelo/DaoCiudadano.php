@@ -49,6 +49,6 @@ if(isset($_POST['buscar']))
         <span>
             <br><br>
             <input type="submit"  name="Imprimir" value="Imprimir boleta" onclick="javascript:window.print()"> 
-            <a href="../Vistas/Buscar.php"><h3>Volver atras</h3></a>
+
         </span>
     </div>
