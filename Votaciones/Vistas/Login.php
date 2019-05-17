@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="css/util1.css">
 	<link rel="stylesheet" type="text/css" href="css/main1.css">
+	<script src="jquery.js"></script>	
+	<script src="sweetalert2.all.min.js"></script>
     </head>
     <body>
         <div class="limiter">
@@ -23,17 +25,17 @@
                     <span class="login100-form-title p-b-41">
 			INICIAR SESIÓN
                     </span>
-                    <form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="../Modelo/logear.php">
+                    <form class="login100-form validate-form p-b-33 p-t-5" method="POST" action="../Controlador/controlUsuario.php">
 			<div class="wrap-input100 validate-input" data-validate = "Enter username">
-                            <input class="input100" type="text" name="username" placeholder="Usuario">
+                            <input class="input100" type="text" name="login" placeholder="Usuario" autofocus>
                             <span class="focus-input100" data-placeholder="&#xe82a;"></span>
 			</div>
 			<div class="wrap-input100 validate-input" data-validate="Enter password">
-                            <input class="input100" type="password" name="pass" placeholder="Contraseña">
+                            <input class="input100" type="password" name="password" placeholder="Contraseña">
                             <span class="focus-input100" data-placeholder="&#xe80f;"></span>
 			</div>
                         <div class="container-login100-form-btn m-t-32">
-                            <button class="login100-form-btn">
+                            <button class="login100-form-btn" name="validar">
 				Ingresar
                             </button>
 			</div>
@@ -56,7 +58,9 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main.js"></script>
         <?php
-        // put your code here
+        if(isset($_REQUEST["r"])){
+                echo "<script>Swal.fire('Fail','Ususario o Contraseña invalido','warning');</script>";
+           }
         ?>
     </body>
 </html>

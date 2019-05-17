@@ -43,11 +43,11 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-                                            <li><a href="../Vistas/Acta.php">ACTA</a></li>
+                                            <li><a href="Acta.php">ACTA</a></li>
 				          <li><a href="about.html">GRAFICOS</a></li>
 				          <li><a href="packages.html">REPORTES</a></li>
 				          <li><a href="hotels.html">USUARIOS</a></li>
-				          <li><a href="insurance.html">SALIR</a></li>
+                                          <li><a href="Menu.php?c=cerrar">SALIR</a></li>
 				        
 				        
 				      </nav><!-- #nav-menu-container -->					      		  
