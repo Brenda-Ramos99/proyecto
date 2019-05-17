@@ -35,6 +35,7 @@
 			<link rel="stylesheet" href="css/main2.css">
 		</head>
 		<body style="background: url('images/1.jpg'); background-size: cover" >	
+                    <?php require 'validar.php';?>
 
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
@@ -72,8 +73,6 @@
 			<script src="js/owl.carousel.min.js"></script>							
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main2.js"></script>	
-        <?php
-        // put your code here
-        ?>
+        
     </body>
 </html>

@@ -5,7 +5,7 @@ class DaoUsuario extends Conexion{
         parent::__construct();
     }
     function validarUsuario($login,$password){
-        $para=$this->con->prepare("select * from usuario where login = ? and password = ?");
+        $para=$this->con->prepare("select * from usuario where login=? and password=?");
         $para->bind_param('ss',$a,$b);
         $a=$login;
         $b=sha1($password);
