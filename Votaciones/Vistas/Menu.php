@@ -47,7 +47,7 @@
                                             <li><a href="Acta.php">ACTA</a></li>
 				          <li><a href="about.html">GRAFICOS</a></li>
 				          <li><a href="packages.html">REPORTES</a></li>
-				          <li><a href="hotels.html">USUARIOS</a></li>
+                                          <li><a href="reporteUsuarios.php">USUARIOS</a></li>
                                           <li><a href="Menu.php?c=cerrar">SALIR</a></li>
 				        
 				        

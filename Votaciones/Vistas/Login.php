@@ -59,7 +59,7 @@
 	<script src="js/main.js"></script>
         <?php
         if(isset($_REQUEST["r"])){
-                echo "<script>Swal.fire('Fail','Ususario o Contraseña invalido','warning');</script>";
+                echo "<script>Swal.fire('Error','Usuario o Contraseña incorrecto','warning');</script>";
            }
         ?>
     </body>

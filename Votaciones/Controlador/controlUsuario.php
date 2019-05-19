@@ -8,9 +8,9 @@ if(isset($_REQUEST["validar"])){
     if($r>0){
         session_start();
         $_SESSION["s1"]=$login;
-        header("Location:../Vista/Menu.php");
+        header("Location:../Vistas/Menu.php");
     }
     else
-        header("Location:../Vista/Login.php?r=fail");
+        header("Location:../Vistas/Login.php?r=fail");
 
 }
