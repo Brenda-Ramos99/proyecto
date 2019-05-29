@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <h1 class="title"><center>Acta De Escrutinio</center></h1>
                             <!---inicio del formulario-->
-                            <form method="POST" action="#">
+                            <form method="POST" action="../Modelo/daoActa.php">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group">
@@ -40,58 +40,12 @@
                                             Acta N°:<input type="text"placeholder="0"name="acta"></div>
                                     </div>
                                 </div>
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <select name="depa">
-                                                    <option disabled="disabled" selected="selected">Departamento</option>
-                                                    <option>Ahuachapán</option>
-                                                    <option>Santa Ana</option>
-                                                    <option>Sonsonate</option>
-                                                    <option>Cabañas</option>
-                                                    <option>Chalatenango</option>
-                                                    <option>Cuscatlán</option>
-                                                    <option>La Libertad</option>
-                                                    <option>La Paz</option>
-                                                    <option>San Salvador</option>
-                                                    <option>San Vicente</option>
-                                                    <option>Morazán</option>
-                                                    <option>San Miguel</option>
-                                                    <option>Usulután</option>
-                                                    <option>La Unión</option>
-                                                </select>
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <select name="muni">
-                                                    <option disabled="disabled" selected="selected">Municipio</option>
-                                                    <option>Ahuachapán</option>
-                                                    <option>Apaneca</option>
-                                                    <option>Atiquizaya</option>
-                                                    <option>Concepción de Ataco</option>
-                                                    <option>El Refugio</option>
-                                                    <option>Guaymango</option>
-                                                    <option>Jujutla</option>
-                                                </select>
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="Centro de Votación" name="Centro de Votación">
-                                </div>
                                 <h3> Partidos:</h3><br><br>
                                 <div class="row row-space">
                                     <div class="col-2"><h4><center>Partido 1:</center></h4></div>
                                         <div class="input-group">
                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text" placeholder="0" name="arena">
+                                                <input type="text" placeholder="0" name="p1">
                                                 <div class="select-dropdown"></div>
                                             </div>
                                         </div>
@@ -100,7 +54,7 @@
                                     <div class="col-2"><h4><center>Partido 2:</center></h4></div>
                                         <div class="input-group">
                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text"placeholder="0" name="pcn">
+                                                <input type="text"placeholder="0" name="p2">
                                                 <div class="select-dropdown"></div>
                                             </div>
                                     </div>
@@ -109,7 +63,7 @@
                                     <div class="col-2"><h4><center>Partido 3:</center></h4></div>
                                         <div class="input-group">
                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text" placeholder="0" name="pdc">
+                                                <input type="text" placeholder="0" name="p3">
                                                 <div class="select-dropdown"></div>
                                             </div>
                                     </div>
@@ -118,27 +72,18 @@
                                     <div class="col-2"><h4><center>Partido 4:</center></h4></div>
                                         <div class="input-group">
                                             <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text"placeholder="0" name="fmln">
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="row row-space">
-                                    <div class="col-2"><h4><center>Partido 5:</center></h4></div>
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text" placeholder="0" name="gana">
+                                                <input type="text"placeholder="0" name="p4">
                                                 <div class="select-dropdown"></div>
                                             </div>
                                         </div>
                                 </div>
                                 <div class="p-t-20">
                                     <button id="b1"class="btn btn--radius btn--green" type="submit">Enviar datos</button>
-                                </div>
+                                </div>            </div>
+
                             </form>
                         </div>
                 </div>
-            </div>
         </div>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
