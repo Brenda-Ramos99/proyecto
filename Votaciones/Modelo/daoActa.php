@@ -2,13 +2,11 @@
 require 'conexion.php';
 $jrv=$_POST['jrv'];
 $acta=$_POST['acta'];
-//$depa=$_POST['depa'];
-//$muni=$_POST['muni'];
 $p1=$_POST['p1'];
 /*$p2=$_POST['p2'];
 $p3=$_POST['p3'];
 $p4=$_POST['p4'];'$p2','$p3','$p4')*/
-$insertarA="INSERT INTO acta(id_acta,id_jrv) values ('$acta','$jrv')";
+$insertarA="INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) values ('$acta','$jrv')";
 
 $insertar="INSERT INTO detalle_acta(id_acta,cantidad_votos) values ('$acta','$p1')";
 if ($conexion->query($insertar)==TRUE &&$conexion->query($insertarA)==TRUE ){
