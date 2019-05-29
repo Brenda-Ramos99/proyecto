@@ -1,3 +1,6 @@
+<?php
+require '../Modelo/conexion.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,15 +32,26 @@
                         <div class="card-body">
                             <h1 class="title"><center>Acta De Escrutinio</center></h1>
                             <!---inicio del formulario-->
-                            <form method="POST" action="../Modelo/daoActa.php">
+                            <form method="POST" action="#">
                                 <div class="row row-space">
                                     <div class="col-2">
-                                        <div class="input-group">
-                                            JRV N°:<input type="text"placeholder="0"name="jrv"></div>
+                                        <div>
+                                            JRV N°:
+                                            <select name="jrv" class="select">
+                                            <option value="0">Seleccionar</option>
+                                            <?php
+                                            $mostrar="SELECT * FROM jrv";
+                                            $consulta=mysqli_query($conexion,$mostrar);
+                                              while($valores=mysqli_fetch_array($consulta)){
+                                                echo '<option value="'.$valores[id_jrv].'">'.$valores[id_jrv].'</option>';
+                                             }
+                                            ?>
+                                          </select></div>
+                                       
                                     </div>
                                     <div class="col-2">
                                         <div class="input-group">              			
-                                            Acta N°:<input type="text"placeholder="0"name="acta"></div>
+                                            Acta N°:<input type="text"placeholder="0"name="acta" readonly></div>
                                     </div>
                                 </div>
                                 <h3> Partidos:</h3><br><br>
@@ -93,8 +107,5 @@
     <script src="vendor/datepicker/daterangepicker.js"></script>
     <!-- Main JS-->
     <script src="js/global.js"></script>
-        <?php
-        // put your code here
-        ?>
     </body>
 </html>
