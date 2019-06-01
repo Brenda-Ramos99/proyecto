@@ -11,4 +11,3 @@ session_start();
    	header("Location:Login.php");
    }
 
-

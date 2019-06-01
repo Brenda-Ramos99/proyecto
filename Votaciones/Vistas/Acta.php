@@ -23,6 +23,14 @@ require '../Modelo/conexion.php';
         <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
         <!-- Main CSS-->
         <link href="css/main.css" rel="stylesheet" media="all">
+        <!-- Bootstrap core CSS -->
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/sticky-footer-navbar.css" rel="stylesheet">
+        <link href="assets/style.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="dist/js/bootstrap.min.js"></script>
+</body>
     </head>
     <body>
         <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
@@ -32,72 +40,43 @@ require '../Modelo/conexion.php';
                         <div class="card-body">
                             <h1 class="title"><center>Acta De Escrutinio</center></h1>
                             <!---inicio del formulario-->
-                            <form method="POST" action="#">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div>
-                                            JRV N°:
-                                            <select name="jrv" class="select">
-                                            <option value="0">Seleccionar</option>
+                            <form name="frmProduct" method="POST" action="../Modelo/daoActa.php">
+                                <!---<div class="row row-space">       -->                      			
+                                    <h5> Acta N°:</h5>
+                                    <div class="caja">
+                                        <select name="acta">
+                                            <h4><option value="0">Seleccionar</option></h4>
                                             <?php
-                                            $mostrar="SELECT * FROM jrv";
+                                            $mostrar="SELECT * FROM acta";
                                             $consulta=mysqli_query($conexion,$mostrar);
                                               while($valores=mysqli_fetch_array($consulta)){
-                                                echo '<option value="'.$valores[id_jrv].'">'.$valores[id_jrv].'</option>';
+                                                echo '<option value="'.$valores[id_acta].'"><h4>'.$valores[id_acta].'</h4></option>';
                                              }
                                             ?>
-                                          </select></div>
-                                       
+                                        </select>
                                     </div>
-                                    <div class="col-2">
-                                        <div class="input-group">              			
-                                            Acta N°:<input type="text"placeholder="0"name="acta" readonly></div>
+                                <!--</div>                      		-->	
+                                <br><br>    
+                                <div id="outer">
+                                    <div id="header">
+                                        <div class="float-left">&nbsp; ID</div>
+                                        <div class="float-left col-heading">&nbsp; Partido</div>
+                                        <div class="float-left col-heading2">&nbsp; Votos</div>
                                     </div>
-                                </div>
-                                <h3> Partidos:</h3><br><br>
-                                <div class="row row-space">
-                                    <div class="col-2"><h4><center>Partido 1:</center></h4></div>
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text" placeholder="0" name="p1">
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="row row-space">
-                                    <div class="col-2"><h4><center>Partido 2:</center></h4></div>
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text"placeholder="0" name="p2">
-                                                <div class="select-dropdown"></div>
-                                            </div>
+                                    <div id="productos">
+                                        <?php require_once("InputDinamico.php") ?>
+                                    </div>
+                                    <div class="btn-action float-clear">
+                                        <span class="success"><?php if(isset($resultado)){ echo$resultado;}?></span>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <input class="btn btn-primary" type="submit" name="guardar" value="Guardar Datos" />
                                     </div>
                                 </div>
-                                <div class="row row-space">
-                                    <div class="col-2"><h4><center>Partido 3:</center></h4></div>
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text" placeholder="0" name="p3">
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="row row-space">
-                                    <div class="col-2"><h4><center>Partido 4:</center></h4></div>
-                                        <div class="input-group">
-                                            <div class="rs-select2 js-select-simple select--no-search">
-                                                <input type="text"placeholder="0" name="p4">
-                                                <div class="select-dropdown"></div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="p-t-20">
-                                    <button id="b1"class="btn btn--radius btn--green" type="submit">Enviar datos</button>
-                                </div>            </div>
-
                             </form>
                         </div>
                 </div>
+            </div>
         </div>
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>

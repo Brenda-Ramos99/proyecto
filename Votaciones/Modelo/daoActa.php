@@ -1,14 +1,37 @@
 <?php
-require 'conexion.php';
-$jrv=$_POST['jrv'];
+//require 'conexion.php';
 $acta=$_POST['acta'];
+/*class Acta extends Conexion
+{
+    function __construct() {
+        parent::__construct();
+    }
+    function insertar(){
+        $query = "INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) VALUES (".$acta.", ";
+    }
+}*/
 
-$insertar="INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) values ('$acta','$jrv')";
-
-$insertar="INSERT INTO detalle_acta(id_acta,cantidad_votos) values ('$acta','$p1')";
-if ($conexion->query($insertar)==TRUE ){
-	echo '<script>alert("Datos almacenados correctamente.") self.location="../Vista/Menu.php"</script>';
-}else{
-	echo '<script>alert("No se pudo realizar el registro.") self.location="../Vista/Acta.php"</script>';
+if(!empty($_POST["guardar"])) {
+    $con = mysqli_connect("localhost","root","", "pruebav");
+    //$contador = count($_POST["cantidad_votos"]);
+    $ProContador=0;
+    $query = "INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) VALUES (".$acta.", ";
+    $queryValue = "";
+    for($i=0;$i<4;$i++) {
+        if(!empty($_POST["cantidad_votos"][$i]) ) {
+            $ProContador++;
+            if($queryValue!="") {
+                $queryValue .= ",";
+            }
+            $queryValue .= "'" .$_POST["cantidad_votos"][$i]. "','" . $_POST["id_partido"][$i] . "'";
+        }
+    }
+    $sql = $query.$queryValue;
+    if($ProContador!=0) {
+        $resultadocon = mysqli_query($con, $sql);
+        if(!empty($resultadocon)) $resultado = " <br><ul class='list-group' style='margin-top:15px;'>"
+                . "   <li class='list-group-item'>Registro(s) Agregado Correctamente.</li></ul>";
+    }
 }
+
 
