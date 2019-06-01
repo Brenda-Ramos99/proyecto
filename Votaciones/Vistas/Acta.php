@@ -30,6 +30,8 @@ require '../Modelo/conexion.php';
         <link href="assets/style.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
         <script src="dist/js/bootstrap.min.js"></script>
+        <script src="jquery.js"></script>	
+	<script src="sweetalert2.all.min.js"></script>
 </body>
     </head>
     <body>
@@ -65,7 +67,7 @@ require '../Modelo/conexion.php';
                                         <?php require_once("InputDinamico.php") ?>
                                     </div>
                                     <div class="btn-action float-clear">
-                                        <span class="success"><?php if(isset($resultado)){echo$resultado;}?></span>
+                                       
                                     </div>
                                     <div style="position: relative;">
                                         <input class="btn btn-primary" type="submit" name="guardar" value="Guardar Datos" />

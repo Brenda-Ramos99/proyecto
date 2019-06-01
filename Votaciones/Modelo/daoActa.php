@@ -15,13 +15,19 @@ if(!empty($_POST["guardar"])) {
         }
     }
     $sql = $query.$queryValue;
-    if($ProContador!=0) {
-        $resultadocon = mysqli_query($con, $sql);
-        if(empty($resultadocon)) $resultado = "echo '<script language=javascript>
-		alert('Datos almacenados correctamente')
-		self.location ='../Menu.php''
-		</script>'";
-    }
+    $resultado=$con->query($sql);
+    
+    if ($resultado==TRUE) {
+	echo '<script language=javascript>
+		alert("Datos almacenados correctamente")
+		self.location ="../Vistas/Menu.php"
+		</script>';
+            }else{
+	echo '<script language=javascript>
+		alert("Datos no almacenados")
+		self.location ="../Vistas/Acta.php"
+		</script>';
+        }
 }
 
 
