@@ -38,7 +38,7 @@ require '../Modelo/conexion.php';
                 <div class="card card-1">
                     <div class="card-heading"></div>
                         <div class="card-body">
-                            <h1 class="title"><center>Acta De Escrutinio</center></h1>
+                            <h1 class="title"><center>Acta De Escrutinio</cente r></h1>
                             <!---inicio del formulario-->
                             <form name="frmProduct" method="POST" action="../Modelo/daoActa.php">
                                 <!---<div class="row row-space">       -->                      			
