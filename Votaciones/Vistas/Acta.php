@@ -43,7 +43,7 @@ require '../Modelo/conexion.php';
                             <form name="frmProduct" method="POST" action="../Modelo/daoActa.php">
                                 <!---<div class="row row-space">       -->                      			
                                     <h5> Acta N°:</h5>
-                                    <div class="caja">
+                                    <div class="select">
                                         <select name="acta">
                                             <h4><option value="0">Seleccionar</option></h4>
                                             <?php
@@ -59,7 +59,7 @@ require '../Modelo/conexion.php';
                                 <br><br>    
                                 <div id="outer">
                                     <div id="header">
-                                        <div class="float-left">&nbsp; ID</div>
+                                        <div class="float-left">&nbsp; </div>
                                         <div class="float-left col-heading">&nbsp; Partido</div>
                                         <div class="float-left col-heading2">&nbsp; Votos</div>
                                     </div>

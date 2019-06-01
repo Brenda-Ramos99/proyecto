@@ -502,11 +502,21 @@ select:focus{ outline: none;}
 	right:0px;	
 	pointer-events: none;
 }*/
-.caja {
-     margin:20px auto;        
-     border:1px solid #d9d9d9;
-     height:30px;
-     width: 230px;
-     overflow: hidden;
-     position:relative;
-  }
+.select {
+  border: 1px solid #ccc;
+  width: 140px;
+  margin: 50px auto 10px;
+  overflow: hidden;
+  background: #fff url("http://www.csslab.cl/ejemplos/select/arrowdown.gif") no-repeat 90% center;
+}
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

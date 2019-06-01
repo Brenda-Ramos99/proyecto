@@ -49,27 +49,33 @@
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
                 <?php require 'validar.php';?>
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                  <li class="active"><a href="Acta.php">ACTA</a></li>
+                  <li class="has-children">
+                    <a>ACTA</a>
+                    <ul class="dropdown">
+                        <li><a href="Acta.php">NUEVA ACTA</a></li>
+                    </ul>
+                  </li>
                 <li class="has-children">
                   <a>USUARIO</a>
                   <ul class="dropdown">
                     <li><a href="#">NUEVO USUARIO</a></li>
                     <li><a href="reporteUsuarios.php">MOSTRAR USUARIOS</a></li>
-                    <li class="has-children">
-                    </li>
                   </ul>
                 </li>
-                <li><a href="#">GRAFICAS</a></li>
+                <li class="has-children">
+                    <a>GRAFICAS</a>
+                    <ul class="dropdown">
+                        <li><a href="Grafica.php">MOSTRAR GRAFICA</a></li>
+                    </ul>
+                </li>
                 <li class="has-children">
                     <a>REPORTES</a>
                     <ul class="dropdown">
                         <li><a href="reporteCiudadano.php">REPORTE CIUDADANOS</a></li>
                         <li><a href="reporteUsuarios.php">REPORTE USUARIOS</a></li>
-                    <li class="has-children">
-                    </li>
                   </ul>
                 </li>
-                <li><a href="MenuAdmin.php?c=cerrar">SALIR</a></li>
+                <li><a href="Menu.php?c=cerrar">SALIR</a></li>
               </ul>
             </nav>
           </div>

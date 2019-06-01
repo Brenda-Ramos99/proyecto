@@ -1,6 +1,7 @@
 <?php
 //require 'conexion.php';
 $acta=$_POST['acta'];
+
 /*class Acta extends Conexion
 {
     function __construct() {
@@ -15,7 +16,7 @@ if(!empty($_POST["guardar"])) {
     $con = mysqli_connect("localhost","root","", "pruebav");
     //$contador = count($_POST["cantidad_votos"]);
     $ProContador=0;
-    $query = "INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) VALUES (".$acta.", ";
+    $query = "INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) VALUES (".$acta.",";
     $queryValue = "";
     for($i=0;$i<4;$i++) {
         if(!empty($_POST["cantidad_votos"][$i]) ) {
@@ -23,7 +24,7 @@ if(!empty($_POST["guardar"])) {
             if($queryValue!="") {
                 $queryValue .= ",";
             }
-            $queryValue .= "'" .$_POST["cantidad_votos"][$i]. "','" . $_POST["id_partido"][$i] . "'";
+            $queryValue .= "'".$_POST["cantidad_votos"][$i]."','". $_POST["id_partido"][$i]."')";
         }
     }
     $sql = $query.$queryValue;
