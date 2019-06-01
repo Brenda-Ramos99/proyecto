@@ -8,7 +8,7 @@ if(isset($_REQUEST["validar"])){
     if($r>0){
         session_start();
         $_SESSION["s1"]=$login;
-        header("Location:../Vistas/MenuAdmin.php");
+        header("Location:../Vistas/Menu.php");
     }
     else
         header("Location:../Vistas/Login.php?r=fail");
