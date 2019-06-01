@@ -9,9 +9,6 @@
             <div class="float-left">
                 <input class="form-control" type="text" name="cantidad_votos[]" style="width:210px;" />
             </div>
-            
-<!--<div class="float-left"><input class="form-control" type="text" name="id_acta[]"/></div>-->
-   
 	</li>
     </ul> 
 </div>
@@ -26,9 +23,6 @@
             <div class="float-left">
                 <input class="form-control" type="text" name="cantidad_votos[]" style="width:210px;" />
             </div>
-            
-<!--<div class="float-left"><input class="form-control" type="text" name="id_acta[]"/></div>-->
-            
 	</li>
     </ul> 
 </div>
@@ -43,9 +37,6 @@
              <div class="float-left">
                 <input class="form-control" type="text" name="cantidad_votos[]" style="width:210px;" />
             </div>
-            
-<!--<div class="float-left"><input class="form-control" type="text" name="id_acta[]"/></div>-->
-           
 	</li>
     </ul> 
 </div>
@@ -60,9 +51,6 @@
             <div class="float-left">
                 <input class="form-control" type="text" name="cantidad_votos[]" style="width:210px;" />
             </div>
-           
-<!--<div class="float-left"><input class="form-control" type="text" name="id_acta[]"/></div>-->
-            
 	</li>
     </ul> 
 </div>

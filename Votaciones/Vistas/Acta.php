@@ -38,10 +38,9 @@ require '../Modelo/conexion.php';
                 <div class="card card-1">
                     <div class="card-heading"></div>
                         <div class="card-body">
-                            <h1 class="title"><center>Acta De Escrutinio</cente r></h1>
+                            <h1 class="title"><center>Acta De Escrutinio</cente></h1>
                             <!---inicio del formulario-->
-                            <form name="frmProduct" method="POST" action="../Modelo/daoActa.php">
-                                <!---<div class="row row-space">       -->                      			
+                            <form name="frmProduct" method="POST" action="../Modelo/daoActa.php">                     			
                                     <h5> Acta N°:</h5>
                                     <div class="select">
                                         <select name="acta">
@@ -55,7 +54,6 @@ require '../Modelo/conexion.php';
                                             ?>
                                         </select>
                                     </div>
-                                <!--</div>                      		-->	
                                 <br><br>    
                                 <div id="outer">
                                     <div id="header">
@@ -67,7 +65,7 @@ require '../Modelo/conexion.php';
                                         <?php require_once("InputDinamico.php") ?>
                                     </div>
                                     <div class="btn-action float-clear">
-                                        <span class="success"><?php if(isset($resultado)){ echo$resultado;}?></span>
+                                        <span class="success"><?php if(isset($resultado)){echo$resultado;}?></span>
                                     </div>
                                     <div style="position: relative;">
                                         <input class="btn btn-primary" type="submit" name="guardar" value="Guardar Datos" />
