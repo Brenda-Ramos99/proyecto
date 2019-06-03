@@ -1,7 +1,7 @@
 <?php
 $acta=$_POST['acta'];
 if(!empty($_POST["guardar"])) {
-    $con = mysqli_connect("localhost","root","", "pruebav");
+    $con = mysqli_connect("localhost","root","", "votaciones");
     $ProContador=0;
     $query = "INSERT INTO detalle_acta(id_acta,cantidad_votos,id_partido) VALUES ";
     $queryValue = "";
@@ -22,12 +22,12 @@ if(!empty($_POST["guardar"])) {
 		alert("Datos almacenados correctamente")
 		self.location ="../Vistas/Menu.php"
 		</script>';
-            }else{
+    }else{
 	echo '<script language=javascript>
 		alert("Datos no almacenados")
 		self.location ="../Vistas/Acta.php"
 		</script>';
-        }
+    }
 }
 
 

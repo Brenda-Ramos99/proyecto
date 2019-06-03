@@ -8,8 +8,9 @@
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <script src="jquery.js"></script>	
-        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="jquery.js"></script>
         <script type="text/javascript">
         $(document).ready(function(){
             setInterval(function(){
@@ -34,15 +35,14 @@
                 type: 'column'
             },
             title: {
-                text: 'NIVEL NACIONAL'
+                text: 'RESULTADOS A NIVEL NACIONAL'
             },
             subtitle: {
-                text: 'El salvador'
+                text: 'Votaciones 2019, El salvador'
             },
-            colors: ['#1cb646', '#974acf', ' #48aaee ', '#d5ef18'],
+            colors: ['#29E11A', '#1BDDC2', ' #9F6FD9 ', '#C62F61'],
             xAxis: {
                 type: 'category',
-
             },
             yAxis: {
                 title: {
@@ -71,19 +71,19 @@
                     colorByPoint: true,
                     data: [
                         {
-                            name: "Partido A",
+                            name: "Partido 1",
                             y:<?php $votos->mostrar(1);?>,// cambiar solo el valor de lo spartidos que desea mostrar su barra
                         },
                         {
-                            name: "Partido B",
+                            name: "Partido 2",
                             y: <?php $votos->mostrar(2);?>,// cambiar solo el valor de lo spartidos que desea mostrar su barra
                         },
                         {
-                            name: "Partido C",
+                            name: "Partido 3",
                             y: <?php $votos->mostrar(3);?>,// cambiar solo el valor de lo spartidos que desea mostrar su barra
                         },
                         {
-                            name: "Partido D",
+                            name: "Partido 4",
                              y:<?php $votos->mostrar(4);?>,// cambiar solo el valor de lo spartidos que desea mostrar su barra
                         }
                     ]

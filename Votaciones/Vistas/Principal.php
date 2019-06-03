@@ -11,7 +11,7 @@
             <div id="madeby">
                 <span>
                     <a href="../Vistas/Buscar.php" >Consultar centro de votacion</a> &nbsp &nbsp &nbsp &nbsp &nbsp
-                    <a href="../Vistas/">Ver Resultados</a> &nbsp &nbsp &nbsp &nbsp &nbsp 
+                    <a href="../Vistas/Grafica.php">Ver Resultados</a> &nbsp &nbsp &nbsp &nbsp &nbsp 
                     <a href="../Vistas/Login.php">Ingresar</a> &nbsp &nbsp &nbsp
                 </span>
             </div>  
