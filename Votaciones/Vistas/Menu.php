@@ -48,7 +48,6 @@
                   <li class="has-children">
                     <a>USUARIO</a>
                     <ul class="dropdown">
-                      <li><a href="#">NUEVO USUARIO</a></li>
                       <li><a href="reporteUsuarios.php">MOSTRAR USUARIOS</a></li>
                     </ul>
                   </li>
